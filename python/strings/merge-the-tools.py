@@ -14,8 +14,3 @@ def merge_the_tools(string, k):
                 substring += char
         # print the result
         print(substring)
-
-
-if __name__ == '__main__':
-    string, k = input(), int(input())
-    merge_the_tools(string, k)
