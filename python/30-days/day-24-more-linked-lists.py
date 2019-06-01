@@ -1,4 +1,4 @@
-    def removeDuplicates(self, head):
+def removeDuplicates(self, head):
         temp = head
         s = set()
         s.add(temp.data)
