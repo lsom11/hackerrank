@@ -4,8 +4,8 @@ def mergeSort(arr):
         lefthalf = arr[:mid]  # Dividing the array elements
         righthalf = arr[mid:]  # into 2 halves
 
-        mergeSort(L)  # Sorting the first half
-        mergeSort(R)  # Sorting the second half
+        mergeSort(lefthalf)  # Sorting the first half
+        mergeSort(righthalf)  # Sorting the second half
 
         i = j = k = 0
 
@@ -20,7 +20,7 @@ def mergeSort(arr):
             k += 1
 
         # Checking if any element was left
-        while i < len(L):
+        while i < len(lefthalf):
             arr[k] = lefthalf[i]
             i += 1
             k += 1
