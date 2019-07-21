@@ -7,6 +7,8 @@ import re
 import sys
 
 # Complete the superReducedString function below.
+
+
 def superReducedString(s):
     stack = []
     for c in s:
@@ -16,12 +18,14 @@ def superReducedString(s):
             stack.append(c)
 
     return ''.join(stack) if len(stack) else 'Empty String'
-    
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     s = input()
 
+    print(s)
     result = superReducedString(s)
 
     fptr.write(result + '\n')
