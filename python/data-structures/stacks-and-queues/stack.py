@@ -8,6 +8,9 @@ class Stack:
     def __init__(self):
         self.stack = []
 
+    def size(self):
+        return len(self.stack)
+
     def peek(self):
         return self.stack[-1]
 
