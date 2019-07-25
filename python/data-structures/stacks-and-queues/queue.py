@@ -6,16 +6,19 @@ class Node:
 
 class Queue:
     def __init__(self):
-        self.stack = []
+        self.queue = []
+
+    def size(self):
+      return len(self.queue)
 
     def peek(self):
-        return self.stack[-1]
+        return self.queue[0]
 
     def isEmpty(self):
-        return not len(self.stack)
+        return not len(self.queue)
 
-    def add(self, val):
-        self.stack.append(val)
+    def enqueue(self, val):
+        self.queue.insert(0, val)
 
-    def remove(self):
-        return self.stack.pop(0)
+    def dequeue(self):
+        return self.queue.pop(0)
