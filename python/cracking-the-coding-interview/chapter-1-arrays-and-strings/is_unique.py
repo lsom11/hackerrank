@@ -8,7 +8,3 @@ def is_unique(S):
             dict[char] = 1
 
     return unique
-
-
-print(is_unique('test'))
-print(is_unique('uniqe'))
