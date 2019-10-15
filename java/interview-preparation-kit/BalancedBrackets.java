@@ -29,9 +29,11 @@ public class BalancedBrackets {
   public static void main(String[] args) {
     String test1 = "[()]{}{[()()]()}";
     String test2 = "[(])";
+    String test3 = "[()]";
 
     System.out.println(checkIfBalanced(test1)); // true
     System.out.println(checkIfBalanced(test2)); // false
+    System.out.println(checkIfBalanced(test3)); // true
 
   }
 }
