@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
-    LinkedList<Integer> queue;
-    LinkedList<Integer> stack;
+public class Solution<D> {
+    LinkedList<D> queue;
+    LinkedList<D> stack;
 
     public Solution() {
         queue = new LinkedList<>();
@@ -14,28 +14,28 @@ public class Solution {
         return queue.isEmpty();
     }
 
-    public int peek() {
-        return (int) queue.get(0);
+    public D peek() {
+        return queue.get(0);
     }
 
-    public int size() {
+    public D size() {
         return queue.size();
     }
 
-    public void pushCharacter(int n) {
+    public void pushCharacter(D n) {
         stack.push(n);
     }
 
-    public void enqueueCharacter(int n) {
+    public void enqueueCharacter(D n) {
         queue.addLast(n);
     }
 
-    public int dequeueCharacter() {
-        return (int) queue.remove(0);
+    public D dequeueCharacter() {
+        return queue.remove(0);
     }
 
-    public int popCharacter() {
-        return (int) stack.pop();
+    public D popCharacter() {
+        return stack.pop();
     }
 
     public static void main(String[] args) {
