@@ -5,8 +5,8 @@ import java.util.*;
 
 public class MaximumElement {
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<Integer>();
-        Stack<Integer> maxStack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> maxStack = new Stack<>();
 
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();

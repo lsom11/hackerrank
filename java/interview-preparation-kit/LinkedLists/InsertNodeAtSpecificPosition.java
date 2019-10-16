@@ -6,13 +6,13 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class InsertNodeAtSpecificPosition {
+public class InsertNodeAtSpecificPosition<D> {
 
   static class SinglyLinkedListNode {
-    public int data;
+    public D data;
     public SinglyLinkedListNode next;
 
-    public SinglyLinkedListNode(int nodeData) {
+    public SinglyLinkedListNode(D nodeData) {
       this.data = nodeData;
       this.next = null;
     }
@@ -27,7 +27,7 @@ public class InsertNodeAtSpecificPosition {
       this.tail = null;
     }
 
-    public void insertNode(int nodeData) {
+    public void insertNode(D nodeData) {
       SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
       if (this.head == null) {
@@ -53,7 +53,7 @@ public class InsertNodeAtSpecificPosition {
     }
   }
 
-  static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
+  static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, D data, int position) {
     SinglyLinkedListNode newNode = new SinglyLinkedListNode(data);
 
     if (position == 0) {
