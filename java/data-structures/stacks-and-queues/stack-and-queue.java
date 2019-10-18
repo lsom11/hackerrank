@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution<D> {
+public class StacksAndQueues<D> {
     LinkedList<D> queue;
     LinkedList<D> stack;
 
-    public Solution() {
+    public StacksAndQueues() {
         queue = new LinkedList<>();
         stack = new LinkedList<>();
     }
@@ -43,11 +43,8 @@ public class Solution<D> {
         String input = scan.nextLine();
         scan.close();
 
-        // Convert input String to an array of characters:
         char[] s = input.toCharArray();
 
-        // Create a Solution object:
-        Solution p = new Solution();
-
+        StacksAndQueues p = new StacksAndQueues();
 
 }
